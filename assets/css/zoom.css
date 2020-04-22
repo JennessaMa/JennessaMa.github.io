@@ -1,0 +1,66 @@
+
+.dark {
+  background-color: #9FA2B2 !important;
+  color: #38464D;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  color: #707070;
+  position: relative;
+  background-color: #B8C9B0;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home {
+  width: 80%;
+}
+
+a {
+  width: 5%;
+  height: 12%;
+  margin: 15px;
+}
+
+#title {
+  font-size: 4vw;
+  margin-right: 5%;
+  margin-bottom: 15px;
+}
+
+#content {
+  display: flex;
+}
+
+#pictures {
+  display: inline-block;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: -40px;
+}
+
+.picture {
+  width: 30%;
+  margin: 15px;
+}
+
+#zoom {
+  opacity: 90%;
+}
+
+#cards {
+  opacity: 80%;
+}
+
+#text {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.7vw;
+  line-height: 1.6;
+}

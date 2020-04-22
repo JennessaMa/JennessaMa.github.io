@@ -1,0 +1,125 @@
+html {
+  background-color: #EDE6E9;
+  color: #707070;
+}
+
+body {
+  position: relative;
+}
+
+#background {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.lights1 {
+  width: 49%;
+  display: inline-block;
+}
+
+#plants {
+  position: absolute;
+  right: 0;
+  top: -45px;
+  width: 30%;
+  opacity: 87%;
+}
+
+#clock {
+  position: relative;
+  left: 65%;
+  width: 6%;
+  opacity: 85%
+}
+
+#mainTitle {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2.5vw;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 40%;
+}
+
+#quaratine {
+  font-size: 6.2vw;
+  margin: 45px 0px 45px 0px;
+}
+
+#icons {
+  /* display: flex;
+  justify-content: space-around; */
+  width: 65%;
+  position: absolute;
+  left: 10%;
+  bottom: -125%
+}
+
+.icon {
+  display: inline-block;
+  width: 15%;
+  opacity: 60%;
+  margin-left: 5%;
+  margin-right: 4%;
+}
+
+#labels {
+  display: flex;
+  justify-content: space-around;
+  width: 65%;
+  position: absolute;
+  left: 12%;
+  bottom: -160%;
+}
+
+.label {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2.5vw;
+}
+
+@keyframes swingPlants {
+  25% {transform: rotate(5deg);}
+  50% { transform: rotate(-5deg);}
+  75% { transform: rotate(2deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes swingLights {
+  25% {transform: rotate3d(1, 0, 0, 30deg);}
+  50% {transform: rotate3d(-1, 0, 0, 20deg);}
+  75% { transform: rotate3d(1, 0, 0, 10deg);}
+  100% { transform: rotate(0deg);}
+}
+
+#plants:hover {
+  animation: swingPlants 1.5s ease-in-out 0s 1 forwards;
+}
+
+.lights1:hover {
+  animation: swingLights 1.5s ease-in-out 0s 1 forwards;
+}
+
+@keyframes typing {
+  from {width: 0 }
+  to {width: 100% }
+}
+
+@keyframes blinking {
+  from, to {border-color: transparent }
+  50% {border-color: #707070 }
+}
+
+.typwriter {
+  overflow: hidden;
+  border-right: .2vw solid #707070;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .2vw;
+  animation: typing 2s steps(11, end), blinking .5s step-end;
+}
+
+.dark {
+  background-color: #19314A;
+  color: #D0D0D0;
+}
